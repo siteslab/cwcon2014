@@ -1,10 +1,3 @@
-/* @override http://siteslab.org/cwcon/2014/sites/all/themes/new2014subtheme/css/global.css?mxkgcz */
-
-/* @override http://siteslab.org/cwcon/2014/sites/all/themes/new2014subtheme/css/global.css?mthyak */
-
-/* @override http://siteslab.org/cwcon/2014/sites/all/themes/new2014subtheme/css/global.css?mt6lbz */
-
-
 
 /* This file holds styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
@@ -22,9 +15,8 @@
 /* specific styling of the front page of the 2014 website. Hides the node page title, the sidebar region and creates a clean look
 */
 
-
-not.front html {
-		/* provide the front page of the mobile screen a consistent background color  */
+/*not.front html {
+		/* provide the front page of the mobile screen a consistent background color  *!/
 		 	background-color: #2e4424;
 	
 }
@@ -53,8 +45,6 @@ display:none;
 	display:none;
 }
 
-
-
 .front #zone-branding-wrapper {
 	background-color: none;
 	background:none;
@@ -62,7 +52,154 @@ display:none;
 
 .front .region-content {
 	padding-top: 0px;
+}*/
+
+
+/*
+end of special styling for front page during pre-conference phase*/
+
+/* Styling for normal links */
+a:visited {
+	color: #2e4424;
 }
+
+a:link {
+	text-decoration: none;
+}
+/* End of styling for normal links */
+
+/* Style the horizontal icon menu */
+.iconmenu {
+	color: #ffffff;
+	font-size: 15px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	margin-top: -15px;
+	text-decoration: none;
+}
+
+.iconemenu a:link {
+	color: #ffffff !important;
+	text-decoration: none;
+}
+
+.iconmenu a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.iconmenu a img {
+	margin-left: 15px;
+	margin-right: 8px;
+}
+
+.iconmenu li:hover {
+	background: #2e4424;
+	padding: 10px;	
+}
+
+.iconmenu li {
+	list-style-type: none;
+	padding: 10px;
+	float: left;
+	margin-bottom: 10px;
+	color: #ffffff;
+}
+
+.iconmenu ul li a {
+	color: #ffffff;
+}
+/* End of styling for horizontal icon menu */
+
+.iconset {
+	position: relative;
+	font-size: 11px;
+	float: left;
+	margin-bottom: 30px;
+	text-align:center;
+}
+
+
+.iconcaption {
+	position: relative;
+	top: 132px;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-weight: bold;
+	color: #ffffff;
+	
+	
+	}
+
+/* This is for styling the Local Resources menu using Superfish module coffee option */
+.sf-menu.sf-style-coffee a {
+  border: none;
+  /*background-color: #2e4424;*/
+  background-color: #5c7c35;
+  color: #ffffff;
+  /*font-size: 15px;*/
+  text-decoration: none;
+   width:100%;
+   padding-right: 30%;
+  
+ 
+}
+
+#block-superfish-2 div.block-inner.clearfix h2.block-title {
+	 background-color: #5c7c35;
+	 padding-left: 10px;
+	}
+	
+#block-superfish-2 div.block-inner.clearfix div.content.clearfix {
+		 background-color: #5c7c35;
+		 margin-bottom: 10px;
+		 padding-left: 5px;
+	}
+	
+	.sf-menu.sf-style-coffee li:hover,
+.sf-menu.sf-style-coffee li.sfHover,
+.sf-menu.sf-style-coffee li.active a,
+.sf-menu.sf-style-coffee a:focus,
+.sf-menu.sf-style-coffee a:hover,
+.sf-menu.sf-style-coffee a:active,
+.sf-menu.sf-style-coffee.sf-navbar li li  {
+  background: #7e6b42;
+  color: #ffffff;
+ 
+}
+/*end of styling for Local Resources menu using Superfish*/
+
+/* New styling for area resources block menu with icons */
+.arearesources {
+	/*background: #5c7c35;*/
+	margin: 5px;
+	/*padding-left: 10px;*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 15px;
+}
+
+.arearesources li {
+	list-style-type: none;
+	padding: 10px;
+}
+.arearesources a:visited{
+	/*background: #5c7c35;*/
+	margin: 5px;
+	/*padding-left: 10px;*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 15px;
+	color: #ffffff;
+}
+
+.arearesources li:hover {
+	background: #5c7c35;
+	
+}
+
+/* End of styling for area resources block menu with icons */
+
+
 
 @media only screen 
 and (min-device-width : 768px) 
@@ -145,7 +282,9 @@ h2.block-title {
 
 .region-sidebar-first a:link {
 	color: #fff ;
+	text-decoration: none;
 }
+
 
 a:link {
 	color: #a19734;
@@ -174,8 +313,19 @@ a:link {
 	margin-bottom: -15px; */
 }
 
+span.views-field.views-field-field-conference-video-speaker {
+	color: #ffffff;
+	font-size: 15px;
+	margin: 3px;
+}
 
-	.region-header-first img {
+span.views-field.views-field-field-conference-video-year {
+	color: #ffffff;
+	font-size: 15px;
+	margin: 3px;
+}
+
+.region-header-first img {
 		margin-top: 10px;
 		border: 2px solid #fff;
 		width: 100%;
@@ -458,6 +608,25 @@ div.section.field.field-name-field-session-hashtag.field-type-list-text.field-la
 	width: 35%
 }
 
+td.col-3.col-last {
+	width: 30%;
+}
+
+/*Set the columns in the recent volunteers block*/
+
+#block-views-volunteers-peer-review-block-2 td.col-1.col-first {
+	width: 33%;
+	
+}
+
+#block-views-volunteers-peer-review-block-2 td.col-2 {
+	width: 33%;
+}
+
+#block-views-volunteers-peer-review-block-2  td.col-3.col-last {
+	width: 33%;
+}
+
 /* view specific styling for the video attachments */
 div.view.view-video-attach.view-id-video_attach {
 	padding-top: 10px;
@@ -488,7 +657,17 @@ div.plus1-widget {
 	float: right;
 }
 
-/* Slideshow view on front page*/
+/* Featured Session and Keynote slideshows views on front page. */
+
+/*@Dan adjust slideshow titles here*/
+
+.slideshowtitle {
+	font-size: 30px;
+	color: #2e4424;
+}
+
+/*@Dan end of slideshow title styling here*/
+
 
 div.views-field.views-field-field-keynote-presenter {
 	font-weight: bold;
@@ -507,6 +686,89 @@ div.views-field.views-field-field-keynote-presenter {
 	padding-bottom: 5px;
 	width: 90%;
 }
+
+.featured-session-image {
+
+	margin-left: 45px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	float: ;
+	}
+
+/*.featured-session-image {
+	float: right;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	}*/
+
+.featured-session-presenters a{
+	text-decoration: none;
+	/*margin-left: 3%;*/
+	font-size: 20px;
+	color: #2e4424;
+	padding-bottom: 5px;
+	}
+
+.featured-session-title a{
+	text-decoration: none;
+	/*margin-left: 3%;*/
+	font-size: 25px;
+	color: #2e4424;
+	padding-bottom: 5px;
+	width: 85%;
+	}
+	
+.featuredabstract p{	
+	/*margin-left: 3%;*/
+	font-size: 110%;
+	color: #2e4424;
+	padding-bottom: 5px;
+	padding-right: 20px;
+	}
+	
+.views-field-field-time, .views-field-field-room, .views-field-field-date, .views-field-field-all-presenters, .views-field-field-session-hashtag, .views-field-title {
+    /*color: #9a4d28;*/
+    color: #2e4424;
+	position: relative;
+	text-decoration: none; 
+	bottom: 3; 
+	left: 15;
+	margin-left: 3%;
+	font-size: 15px;
+	} 
+
+.featured-session-room {
+	position: relative; 
+	text-decoration: none; 
+	bottom: 3; 
+	left: 15;
+	margin-left: 3%;
+	font-size: 120%;
+	color: #9a4d28;
+	}
+	
+	section#block-views-featured-session-slider-block-1, 	section#block-views-featured-session-slider-block-1 a,section#block-views-featured-session-slider-block-1 a:visited {
+		text-decoration: none;
+		font-size: 15px;
+		margin: 3px;
+		color: #fff;
+	}
+	
+	/*.featured-session-title-short a{
+	text-decoration: none;
+	font-size: 15px;
+	margin: 3px;
+}*/
+
+	section#block-views-featured-session-slider-block-1 img{
+	padding: 10px;
+}
+
+	section#block-views-featured-session-slider-block-1 p {
+	color: #ffffff;
+	margin: 3px;
+	font-size: 12px;
+}*/
 
  /* style the background of the slideshow */
 #slideshow-wrapper .views_slideshow_main {
@@ -586,9 +848,9 @@ div.view.view-idea-hub-tweets a:link {
 
 
 
-/* twitter view for session nodes*/
+/* twitter view for session nodes for 2013*/
 
-.views-field-field-tweet-author-image img {
+/*.views-field-field-tweet-author-image img {
 	float: left;
 	border-radius: 10px;
 	margin-right: 13px;
@@ -623,7 +885,7 @@ margin-bottom: 10px;
 
 div.view.view-twitter-attach a {
 	color: #a74c1d;
-}
+}*/
 /* turn the main wrapper green */
 
 
@@ -699,11 +961,15 @@ div#comments {
 }
 
 div#comments.comment-wrapper p {
-	color: #f6f2e6;
-	background-color: #a64c1d;
+	color: #ffffff;
+	/*background-color: #a64c1d;*/
 	padding: 2px;
 	margin-top: .2em;
 	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+footer.comment-submitted {
+	color: #ffffff;
 }
 
 /* hiding the comment title in the block */
@@ -711,17 +977,24 @@ div.block div#comments.comment-wrapper h3.comment-title {
 	display:none;
 }
 
+#comments article.comment.clearfix header h3 a.permalink {
+	display: none;
+}
+
 div.block div#comments.comment-wrapper a.username {
 	font-weight: bold;
-	color: #ede5d3;
-	font-size: 1.2em;
+	color: #ffffff;
 }
 
 div.block #comments h2.title {
-	color: #ede5d3;
-	border-bottom: 1px solid #ede5d3;
-	background: url(../images/airship2.png) no-repeat 90% 0px;
-	padding-top: 24px
+	color: #ffffff;
+	/*border-bottom: 1px solid #ede5d3;*/
+	/*background: url(../images/airship2.png) no-repeat 90% 0px;*/
+	padding-top: 10px
+}
+
+#comments li a {
+color: #2e4424;
 }
 
 /* just in case we want the capitalization to be "normal" on the links :) */
@@ -781,6 +1054,19 @@ div.article ul.links li a {
 .node-type-session h1#page-title {
 	font-size: 140%;
 }
+
+/* styling for schedule page */
+.schedule {
+	color: #2e4424 !important;
+	font-size: 13px;
+}
+
+.schedule a {
+	color: #2e4424;
+	font-size: 13px;
+}
+
+/* end of styling for schedule page*/
 
 /* header 2 for node reference fields */
 .node-type-session h2.node-title  {
@@ -861,3 +1147,226 @@ top: 90%;
 	color: #2e4424;
 }
 
+/*Style the video archive slideshow*/
+
+
+.view-display-id-block.videoslideshow {
+	font-size: 15px;
+	margin: 5px;
+}
+.videoarchivetitle a{
+	text-decoration: none;
+	font-size: 10px;
+	margin: 5px;
+}
+
+.videoarchiveimage {
+	margin: 5px;
+}
+
+.videoarchivespeaker {
+	font-size: 10px;
+	color: #ffffff;
+	margin: 5px;
+}
+
+/*new styles for popup schedule view*/
+.view-grouping-header {
+	font-size: 16px;
+}
+
+/*.view-grouping table.views-table.cols-2 caption  {
+font-size: 16px;
+
+}*/
+
+.view-grouping-content p {
+	text-align: left;
+}
+
+.view-grouping-content p a.views-more-link{
+	color: #2e4424;
+	font-weight: bold;
+	
+}
+
+.view-grouping caption {
+	text-align: left !important;
+}
+
+/*Styles for the session hashtag block*/
+
+.twitter_icon img {
+	float: left;
+	margin-right: 10px;	
+	margin-bottom: 5px;
+}
+
+.hashtag {
+	color: #ffffff;	
+	font-size: 18px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.hashtaglabel {
+	color: #ffffff;
+	font-size: 18px;
+	float: left;
+	margin-top: 10px;
+}
+
+.twitter_icon {
+	color: #ffffff;	
+}
+
+#region-content h2.block-title{
+	color: #2e4424;
+}
+
+/*End of styles for the session hashtag block*/
+
+/*Styles for the session tweets block*/
+
+.tweetfeed_profileimage img {
+	margin-top: 10px;
+	margin-right: 10px;
+	float: left;
+}
+
+.views-field-screen-name a, .views-field-screen-name a:visited {
+	margin-top: 10px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.tweetfield_tweettext {
+	color: #ffffff;	
+}
+
+.tweetfield_tweettext a	{
+	color: #ffffff;
+}
+
+span.field-content.tweetfield_tweettext {
+	
+}
+
+div.views-field.views-field-tweet {
+	border-bottom: 1px solid #e6f1e6;
+	padding-bottom: 10px;
+}
+
+#block-views-attach-twitter-feed-block-1  div.view-empty p {
+	color: #ffffff;
+}
+
+/*End of styles for the session tweets block*/
+
+/*Styles for the boosted sessions block*/
+
+.boosted_count {
+	color: #ffffff;	
+	margin-left: 8px;
+	margin-top: 5px;
+}
+
+#block-views-boosted-session-slideshow-block {
+	padding-bottom: 10px;
+}
+
+.boostedtitle a, .boostedtitle a:visited {
+	color: #ffffff;	
+}
+
+a.plus1-link {
+	margin-top: 20px;
+}
+/*End of styles for the boosted sessions block*/
+
+/*Styles for the keynote sessions block*/
+
+.featured-session-abstract-short p {
+	color: #ffffff;
+	margin-top: 10px;	
+}
+
+
+#block-views-keynote-session-view-block-1 a img {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+/*End of styles for the keynote sessions block*/
+
+/*Styles for recently updated materials view*/
+
+td.views-field.views-field-nothing.updated_sessions {
+	font-size: 14px;
+	text-decoration: none;
+}
+
+td.views-field.views-field-nothing.updated_sessions a.views-more-link {
+	font-size: 14px;
+	font-weight: bold;
+	color: #2e4424
+}
+.recentupdatesession {
+	color: #2e4424;
+	font-size: 24px;
+}
+
+div.field-content.updatedsession_abstract, {
+	color: #2e4424;
+}
+
+div.field-content.updatedsession_abstract a.views-more-link {
+	color: #2e4424;
+	font-weight: bold;
+	}
+	
+	a.views-more-link {
+		font-size: 8px;
+	}
+	
+	div.view.view-recently-updated-presentation-materials div.view-grouping-header img {
+	float: left;
+	margin: 10px;	
+}
+
+div.view.view-recently-updated-presentation-materials div.view-grouping-header a {
+	font-size: 18px;	
+	}
+	
+div.view.view-recently-updated-presentation-materials div.view-grouping-header a.views-more-link {
+	font-size: 12px;	
+	}
+	
+
+div.view.view-recently-updated-presentation-materials div.view-grouping-header p {
+	font-size: 14px;	
+	}
+	
+div.view.view-recently-updated-presentation-materials div.view-grouping-content {
+		margin-bottom: 25px;
+	}
+	
+	div.view.view-recently-updated-presentation-materials div.view-grouping-content h3, a {
+	font-size: 14px;
+	margin-top: -15px;
+}
+
+.updated_materials_statement {
+	text-decoration: none;
+	font-size: 14px;
+}
+/*End of styles for recently updated materials view*/
+
+/*Styles for rideshare slider*/
+
+
+
+/*End of styles for rideshare slider*/
+
+/*Styles for the recently updated slider on front page*/
